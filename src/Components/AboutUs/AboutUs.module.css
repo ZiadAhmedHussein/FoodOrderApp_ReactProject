@@ -1,0 +1,37 @@
+.about-us {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: white;
+  background-color: rgb(57, 56, 56);
+}
+
+.about-us h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.about-us p:first-of-type {
+  padding: 0 10px;
+  margin: 0;
+  line-height: 1.4;
+}
+.about-us p:first-of-type::first-letter {
+  text-transform: uppercase;
+}
+
+
+.about-us p:last-of-type {
+  padding: 0 30px;
+  line-height: 1.4;
+  margin: 15px 0;
+}
+.about-us p:last-of-type::first-letter {
+  text-transform: uppercase;
+}

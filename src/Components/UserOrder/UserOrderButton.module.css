@@ -1,0 +1,21 @@
+.user-order-button {
+  background-color: rgba(0, 0, 0, 0.535);
+  padding: 10px 25px;
+  color: white;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-order-button span {
+  background-color: brown;
+  padding: 10px 0;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  width:50px;
+  font-size: 18px;
+}

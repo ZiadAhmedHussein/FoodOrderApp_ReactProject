@@ -1,0 +1,9 @@
+.minue {
+  width: 65%;
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

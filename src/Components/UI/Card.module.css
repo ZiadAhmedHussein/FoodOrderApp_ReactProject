@@ -1,0 +1,8 @@
+.card {
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px 5px  rgb(35, 35, 35);
+}

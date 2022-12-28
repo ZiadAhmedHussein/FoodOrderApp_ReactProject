@@ -1,0 +1,11 @@
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.logo::first-letter {
+  color: rgb(91, 23, 23);
+  font-size: 40px;
+}
