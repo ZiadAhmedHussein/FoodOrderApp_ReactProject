@@ -6,6 +6,10 @@ import Card from "../UI/Card";
 import Meal from "./Meal";
 
 const Minue = (props) => {
+  const amountOfMeal = (mealAmount) => {
+    console.log(mealAmount);
+    props.onMealAmount(mealAmount);
+  };
   return (
     <Card className={classes.minue}>
       {props.minue.map((meal) => {
@@ -15,6 +19,7 @@ const Minue = (props) => {
             mealName={meal.mealName} 
             mealDesc={meal.mealDesc} 
             mealPrice={meal.mealPrice} 
+            onMealAmount={amountOfMeal}
           />
         )
       })}

@@ -3,19 +3,20 @@ import { useState } from "react";
 import classes from "./MealForm.module.css";
 import Button from "../UI/Button";
 
-const MealForm = () => {
+const MealForm = (props) => {
   const [amount, setAmount] = useState(1);
   
 
   const changeAmount = (e) => {
-    setAmount(e.target.value)
+    setAmount(e.target.value);
     
-  }
+  };
 
   const addAmountHandeller = (e) => {
-    e.preventDefault()
-    console.log(amount)
-  }
+    e.preventDefault();
+    // console.log(amount);
+    props.onMealAmount(amount);
+  };
 
   
   

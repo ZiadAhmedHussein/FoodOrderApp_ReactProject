@@ -4,6 +4,9 @@ import classes from "./Meal.module.css";
 import MealForm from "./MealForm";
 
 const Meal = (props) => {
+  const amountOfMeal = (mealAmount) => {
+    props.onMealAmount(mealAmount);
+  };
   return (
     <div className={classes.meal}>
       <div className={classes["meal-details"]}>
@@ -11,7 +14,7 @@ const Meal = (props) => {
         <p className={classes["meal-description"]}><i>{props.mealDesc}</i></p>
         <p className={classes["meal-price"]}>{props.mealPrice}</p>
       </div>
-      <MealForm />
+      <MealForm onMealAmount={amountOfMeal} />
     </div>
   );
 };
